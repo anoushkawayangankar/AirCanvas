@@ -1,0 +1,906 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 71;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3EBFC6A7304890EA0074DB8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EBFC6A6304890EA0074DB8F /* Assets.xcassets */; };
+		A10000000000000000000001 /* AirCanvasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* AirCanvasApp.swift */; };
+		A10000000000000000000002 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* RootView.swift */; };
+		A10000000000000000000003 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000003 /* AppState.swift */; };
+		A10000000000000000000004 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* AppRoute.swift */; };
+		A10000000000000000000005 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* AppError.swift */; };
+		A10000000000000000000006 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* AppLogger.swift */; };
+		A10000000000000000000007 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* HomeView.swift */; };
+		A10000000000000000000009 /* MyCanvasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000009 /* MyCanvasesView.swift */; };
+		A1000000000000000000000A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000A /* SettingsView.swift */; };
+		A1000000000000000000000B /* AppStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000B /* AppStateTests.swift */; };
+		A1000000000000000000000C /* AirCanvasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000C /* AirCanvasUITests.swift */; };
+		A1000000000000000000000D /* OnboardingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000011 /* OnboardingState.swift */; };
+		A1000000000000000000000E /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000012 /* OnboardingPage.swift */; };
+		A1000000000000000000000F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000013 /* OnboardingView.swift */; };
+		A10000000000000000000010 /* OnboardingStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000014 /* OnboardingStateTests.swift */; };
+		A10000000000000000000011 /* CameraAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000015 /* CameraAuthorization.swift */; };
+		A10000000000000000000012 /* CameraPermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000016 /* CameraPermissionService.swift */; };
+		A10000000000000000000013 /* SpatialCanvasCapabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000017 /* SpatialCanvasCapabilityService.swift */; };
+		A10000000000000000000014 /* SpatialCanvasAccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000018 /* SpatialCanvasAccessViewModel.swift */; };
+		A10000000000000000000015 /* SpatialCanvasAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000019 /* SpatialCanvasAccessView.swift */; };
+		A10000000000000000000016 /* SpatialCanvasAccessViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001A /* SpatialCanvasAccessViewModelTests.swift */; };
+		A10000000000000000000017 /* ARTrackingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001B /* ARTrackingState.swift */; };
+		A10000000000000000000018 /* ARSessionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001C /* ARSessionState.swift */; };
+		A10000000000000000000019 /* ARSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001D /* ARSessionService.swift */; };
+		A1000000000000000000001A /* RealityKitSceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001E /* RealityKitSceneController.swift */; };
+		A1000000000000000000001B /* CanvasARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000001F /* CanvasARViewModel.swift */; };
+		A1000000000000000000001C /* LiveARCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000020 /* LiveARCanvasView.swift */; };
+		A1000000000000000000001D /* ARSessionStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000021 /* ARSessionStateTests.swift */; };
+		A1000000000000000000001E /* CanvasARViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000022 /* CanvasARViewModelTests.swift */; };
+		A1000000000000000000001F /* SpatialRaycastResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000023 /* SpatialRaycastResult.swift */; };
+		A10000000000000000000020 /* SpatialRaycastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000024 /* SpatialRaycastService.swift */; };
+		A10000000000000000000021 /* SpatialRaycastResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000025 /* SpatialRaycastResultTests.swift */; };
+		A10000000000000000000022 /* CanvasPoint3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000026 /* CanvasPoint3D.swift */; };
+		A10000000000000000000023 /* BrushStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000027 /* BrushStyle.swift */; };
+		A10000000000000000000024 /* StrokePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000028 /* StrokePoint.swift */; };
+		A10000000000000000000025 /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000029 /* Stroke.swift */; };
+		A10000000000000000000026 /* CanvasTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000002A /* CanvasTool.swift */; };
+		A10000000000000000000027 /* CanvasProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000002B /* CanvasProject.swift */; };
+		A10000000000000000000028 /* DrawingDomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000002C /* DrawingDomainModelTests.swift */; };
+		A10000000000000000000029 /* DrawingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000002D /* DrawingEngine.swift */; };
+		A1000000000000000000002A /* StrokeRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000002E /* StrokeRendering.swift */; };
+		A1000000000000000000002B /* RealityKitStrokeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000002F /* RealityKitStrokeRenderer.swift */; };
+		A1000000000000000000002C /* CanvasTouchInputAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000030 /* CanvasTouchInputAdapter.swift */; };
+		A1000000000000000000002D /* DrawingEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000031 /* DrawingEngineTests.swift */; };
+		A1000000000000000000002E /* StrokeRenderProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000032 /* StrokeRenderProcessor.swift */; };
+		A1000000000000000000002F /* StrokeTubeGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000033 /* StrokeTubeGeometry.swift */; };
+		A10000000000000000000030 /* StrokeRenderProcessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000034 /* StrokeRenderProcessorTests.swift */; };
+		A10000000000000000000031 /* CanvasBrushConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000035 /* CanvasBrushConfiguration.swift */; };
+		A10000000000000000000032 /* CanvasBrushControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000036 /* CanvasBrushControlsView.swift */; };
+		A10000000000000000000033 /* CanvasHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000037 /* CanvasHistory.swift */; };
+		A10000000000000000000034 /* CanvasHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000038 /* CanvasHistoryTests.swift */; };
+		A10000000000000000000035 /* CanvasProjectRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000039 /* CanvasProjectRepository.swift */; };
+		A10000000000000000000036 /* FileCanvasProjectRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000003A /* FileCanvasProjectRepository.swift */; };
+		A10000000000000000000037 /* CanvasProjectSaveCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000003B /* CanvasProjectSaveCoordinator.swift */; };
+		A10000000000000000000038 /* MyCanvasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000003C /* MyCanvasesViewModel.swift */; };
+		A10000000000000000000039 /* CanvasProjectRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000003D /* CanvasProjectRepositoryTests.swift */; };
+		A1000000000000000000003A /* SpatialCanvasState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000003E /* SpatialCanvasState.swift */; };
+		A1000000000000000000003B /* SpatialWorldMapCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000003F /* SpatialWorldMapCoding.swift */; };
+		A1000000000000000000003C /* HandPoseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000040 /* HandPoseModels.swift */; };
+		A1000000000000000000003D /* HandPoseDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000041 /* HandPoseDetector.swift */; };
+		A1000000000000000000003E /* HandTrackingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000042 /* HandTrackingCoordinator.swift */; };
+		A1000000000000000000003F /* HandTrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000043 /* HandTrackingTests.swift */; };
+		A10000000000000000000040 /* FingertipTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000044 /* FingertipTracking.swift */; };
+		A10000000000000000000041 /* FingertipTrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000045 /* FingertipTrackingTests.swift */; };
+		A10000000000000000000042 /* PinchGestureClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000046 /* PinchGestureClassifier.swift */; };
+		A10000000000000000000043 /* PinchGestureClassifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000047 /* PinchGestureClassifierTests.swift */; };
+		A10000000000000000000044 /* SpatialFingertipTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000048 /* SpatialFingertipTracker.swift */; };
+		A10000000000000000000045 /* SpatialStrokeHitTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000049 /* SpatialStrokeHitTester.swift */; };
+		A10000000000000000000046 /* SpatialStrokeHitTesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000004A /* SpatialStrokeHitTesterTests.swift */; };
+		A10000000000000000000047 /* StrokeTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000004B /* StrokeTransformer.swift */; };
+		A10000000000000000000048 /* StrokeTransformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000004C /* StrokeTransformerTests.swift */; };
+		A1000000000000000000004D /* AirCanvasDocumentTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000004D /* AirCanvasDocumentTransfer.swift */; };
+		A1000000000000000000004E /* AirCanvasDocumentTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000004E /* AirCanvasDocumentTransferTests.swift */; };
+		A1000000000000000000004F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000004F /* PrivacyInfo.xcprivacy */; };
+		A10000000000000000000050 /* UserFacingErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000050 /* UserFacingErrorMessage.swift */; };
+		A10000000000000000000051 /* UserFacingErrorMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000051 /* UserFacingErrorMessageTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA00000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50000000000000000000001;
+			remoteInfo = AirCanvas;
+		};
+		AA00000000000000000000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50000000000000000000001;
+			remoteInfo = AirCanvas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3EBFC6A6304890EA0074DB8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20000000000000000000001 /* AirCanvasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirCanvasApp.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A20000000000000000000003 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A20000000000000000000004 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		A20000000000000000000005 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		A20000000000000000000006 /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
+		A20000000000000000000007 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A20000000000000000000009 /* MyCanvasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCanvasesView.swift; sourceTree = "<group>"; };
+		A2000000000000000000000A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A2000000000000000000000B /* AppStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateTests.swift; sourceTree = "<group>"; };
+		A2000000000000000000000C /* AirCanvasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirCanvasUITests.swift; sourceTree = "<group>"; };
+		A2000000000000000000000D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2000000000000000000000E /* AirCanvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirCanvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2000000000000000000000F /* AirCanvasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirCanvasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000010 /* AirCanvasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirCanvasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000011 /* OnboardingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingState.swift; sourceTree = "<group>"; };
+		A20000000000000000000012 /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
+		A20000000000000000000013 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A20000000000000000000014 /* OnboardingStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingStateTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000015 /* CameraAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAuthorization.swift; sourceTree = "<group>"; };
+		A20000000000000000000016 /* CameraPermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissionService.swift; sourceTree = "<group>"; };
+		A20000000000000000000017 /* SpatialCanvasCapabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialCanvasCapabilityService.swift; sourceTree = "<group>"; };
+		A20000000000000000000018 /* SpatialCanvasAccessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialCanvasAccessViewModel.swift; sourceTree = "<group>"; };
+		A20000000000000000000019 /* SpatialCanvasAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialCanvasAccessView.swift; sourceTree = "<group>"; };
+		A2000000000000000000001A /* SpatialCanvasAccessViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialCanvasAccessViewModelTests.swift; sourceTree = "<group>"; };
+		A2000000000000000000001B /* ARTrackingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARTrackingState.swift; sourceTree = "<group>"; };
+		A2000000000000000000001C /* ARSessionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionState.swift; sourceTree = "<group>"; };
+		A2000000000000000000001D /* ARSessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionService.swift; sourceTree = "<group>"; };
+		A2000000000000000000001E /* RealityKitSceneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityKitSceneController.swift; sourceTree = "<group>"; };
+		A2000000000000000000001F /* CanvasARViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasARViewModel.swift; sourceTree = "<group>"; };
+		A20000000000000000000020 /* LiveARCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveARCanvasView.swift; sourceTree = "<group>"; };
+		A20000000000000000000021 /* ARSessionStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionStateTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000022 /* CanvasARViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasARViewModelTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000023 /* SpatialRaycastResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialRaycastResult.swift; sourceTree = "<group>"; };
+		A20000000000000000000024 /* SpatialRaycastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialRaycastService.swift; sourceTree = "<group>"; };
+		A20000000000000000000025 /* SpatialRaycastResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialRaycastResultTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000026 /* CanvasPoint3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasPoint3D.swift; sourceTree = "<group>"; };
+		A20000000000000000000027 /* BrushStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushStyle.swift; sourceTree = "<group>"; };
+		A20000000000000000000028 /* StrokePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokePoint.swift; sourceTree = "<group>"; };
+		A20000000000000000000029 /* Stroke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stroke.swift; sourceTree = "<group>"; };
+		A2000000000000000000002A /* CanvasTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasTool.swift; sourceTree = "<group>"; };
+		A2000000000000000000002B /* CanvasProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasProject.swift; sourceTree = "<group>"; };
+		A2000000000000000000002C /* DrawingDomainModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingDomainModelTests.swift; sourceTree = "<group>"; };
+		A2000000000000000000002D /* DrawingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingEngine.swift; sourceTree = "<group>"; };
+		A2000000000000000000002E /* StrokeRendering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeRendering.swift; sourceTree = "<group>"; };
+		A2000000000000000000002F /* RealityKitStrokeRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityKitStrokeRenderer.swift; sourceTree = "<group>"; };
+		A20000000000000000000030 /* CanvasTouchInputAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasTouchInputAdapter.swift; sourceTree = "<group>"; };
+		A20000000000000000000031 /* DrawingEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingEngineTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000032 /* StrokeRenderProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeRenderProcessor.swift; sourceTree = "<group>"; };
+		A20000000000000000000033 /* StrokeTubeGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeTubeGeometry.swift; sourceTree = "<group>"; };
+		A20000000000000000000034 /* StrokeRenderProcessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeRenderProcessorTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000035 /* CanvasBrushConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasBrushConfiguration.swift; sourceTree = "<group>"; };
+		A20000000000000000000036 /* CanvasBrushControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasBrushControlsView.swift; sourceTree = "<group>"; };
+		A20000000000000000000037 /* CanvasHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasHistory.swift; sourceTree = "<group>"; };
+		A20000000000000000000038 /* CanvasHistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasHistoryTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000039 /* CanvasProjectRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasProjectRepository.swift; sourceTree = "<group>"; };
+		A2000000000000000000003A /* FileCanvasProjectRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCanvasProjectRepository.swift; sourceTree = "<group>"; };
+		A2000000000000000000003B /* CanvasProjectSaveCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasProjectSaveCoordinator.swift; sourceTree = "<group>"; };
+		A2000000000000000000003C /* MyCanvasesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCanvasesViewModel.swift; sourceTree = "<group>"; };
+		A2000000000000000000003D /* CanvasProjectRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasProjectRepositoryTests.swift; sourceTree = "<group>"; };
+		A2000000000000000000003E /* SpatialCanvasState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialCanvasState.swift; sourceTree = "<group>"; };
+		A2000000000000000000003F /* SpatialWorldMapCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialWorldMapCoding.swift; sourceTree = "<group>"; };
+		A20000000000000000000040 /* HandPoseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandPoseModels.swift; sourceTree = "<group>"; };
+		A20000000000000000000041 /* HandPoseDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandPoseDetector.swift; sourceTree = "<group>"; };
+		A20000000000000000000042 /* HandTrackingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandTrackingCoordinator.swift; sourceTree = "<group>"; };
+		A20000000000000000000043 /* HandTrackingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandTrackingTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000044 /* FingertipTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingertipTracking.swift; sourceTree = "<group>"; };
+		A20000000000000000000045 /* FingertipTrackingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingertipTrackingTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000046 /* PinchGestureClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchGestureClassifier.swift; sourceTree = "<group>"; };
+		A20000000000000000000047 /* PinchGestureClassifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchGestureClassifierTests.swift; sourceTree = "<group>"; };
+		A20000000000000000000048 /* SpatialFingertipTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialFingertipTracker.swift; sourceTree = "<group>"; };
+		A20000000000000000000049 /* SpatialStrokeHitTester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialStrokeHitTester.swift; sourceTree = "<group>"; };
+		A2000000000000000000004A /* SpatialStrokeHitTesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpatialStrokeHitTesterTests.swift; sourceTree = "<group>"; };
+		A2000000000000000000004B /* StrokeTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeTransformer.swift; sourceTree = "<group>"; };
+		A2000000000000000000004C /* StrokeTransformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeTransformerTests.swift; sourceTree = "<group>"; };
+		A2000000000000000000004D /* AirCanvasDocumentTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirCanvasDocumentTransfer.swift; sourceTree = "<group>"; };
+		A2000000000000000000004E /* AirCanvasDocumentTransferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirCanvasDocumentTransferTests.swift; sourceTree = "<group>"; };
+		A2000000000000000000004F /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A20000000000000000000050 /* UserFacingErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFacingErrorMessage.swift; sourceTree = "<group>"; };
+		A20000000000000000000051 /* UserFacingErrorMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFacingErrorMessageTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30000000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000002 /* AirCanvas */,
+				A4000000000000000000000A /* AirCanvasTests */,
+				A4000000000000000000000B /* AirCanvasUITests */,
+				A4000000000000000000000C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A40000000000000000000002 /* AirCanvas */ = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000003 /* App */,
+				A40000000000000000000004 /* Features */,
+				A40000000000000000000008 /* Core */,
+				A40000000000000000000013 /* Models */,
+				A40000000000000000000009 /* Resources */,
+				3EBFC6A6304890EA0074DB8F /* Assets.xcassets */,
+			);
+			path = AirCanvas;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000001 /* AirCanvasApp.swift */,
+				A20000000000000000000002 /* RootView.swift */,
+				A20000000000000000000003 /* AppState.swift */,
+				A20000000000000000000004 /* AppRoute.swift */,
+				A20000000000000000000005 /* AppError.swift */,
+				A20000000000000000000050 /* UserFacingErrorMessage.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000004 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000005 /* Home */,
+				A40000000000000000000006 /* Canvas */,
+				A40000000000000000000007 /* Projects */,
+				A4000000000000000000000D /* Settings */,
+				A4000000000000000000000F /* Onboarding */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000005 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000007 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000006 /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000018 /* SpatialCanvasAccessViewModel.swift */,
+				A20000000000000000000019 /* SpatialCanvasAccessView.swift */,
+				A2000000000000000000001F /* CanvasARViewModel.swift */,
+				A20000000000000000000020 /* LiveARCanvasView.swift */,
+				A20000000000000000000030 /* CanvasTouchInputAdapter.swift */,
+				A20000000000000000000035 /* CanvasBrushConfiguration.swift */,
+				A20000000000000000000036 /* CanvasBrushControlsView.swift */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000007 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000009 /* MyCanvasesView.swift */,
+				A2000000000000000000003C /* MyCanvasesViewModel.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000008 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A4000000000000000000000E /* Logging */,
+				A40000000000000000000010 /* Permissions */,
+				A40000000000000000000011 /* Capabilities */,
+				A40000000000000000000012 /* AR */,
+				A40000000000000000000017 /* Vision */,
+				A40000000000000000000015 /* Drawing */,
+				A40000000000000000000016 /* Persistence */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000009 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000D /* Info.plist */,
+				A2000000000000000000004F /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000A /* AirCanvasTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000B /* AppStateTests.swift */,
+				A20000000000000000000014 /* OnboardingStateTests.swift */,
+				A2000000000000000000001A /* SpatialCanvasAccessViewModelTests.swift */,
+				A20000000000000000000021 /* ARSessionStateTests.swift */,
+				A20000000000000000000022 /* CanvasARViewModelTests.swift */,
+				A20000000000000000000025 /* SpatialRaycastResultTests.swift */,
+				A2000000000000000000002C /* DrawingDomainModelTests.swift */,
+				A20000000000000000000031 /* DrawingEngineTests.swift */,
+				A20000000000000000000034 /* StrokeRenderProcessorTests.swift */,
+				A20000000000000000000038 /* CanvasHistoryTests.swift */,
+				A2000000000000000000003D /* CanvasProjectRepositoryTests.swift */,
+				A20000000000000000000043 /* HandTrackingTests.swift */,
+				A20000000000000000000045 /* FingertipTrackingTests.swift */,
+				A20000000000000000000047 /* PinchGestureClassifierTests.swift */,
+				A2000000000000000000004A /* SpatialStrokeHitTesterTests.swift */,
+				A2000000000000000000004C /* StrokeTransformerTests.swift */,
+				A2000000000000000000004E /* AirCanvasDocumentTransferTests.swift */,
+				A20000000000000000000051 /* UserFacingErrorMessageTests.swift */,
+			);
+			path = AirCanvasTests;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000B /* AirCanvasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000C /* AirCanvasUITests.swift */,
+			);
+			path = AirCanvasUITests;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000E /* AirCanvas.app */,
+				A2000000000000000000000F /* AirCanvasTests.xctest */,
+				A20000000000000000000010 /* AirCanvasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000A /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000E /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000006 /* AppLogger.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000011 /* OnboardingState.swift */,
+				A20000000000000000000012 /* OnboardingPage.swift */,
+				A20000000000000000000013 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000010 /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000015 /* CameraAuthorization.swift */,
+				A20000000000000000000016 /* CameraPermissionService.swift */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000011 /* Capabilities */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000017 /* SpatialCanvasCapabilityService.swift */,
+			);
+			path = Capabilities;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000012 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000001B /* ARTrackingState.swift */,
+				A2000000000000000000001C /* ARSessionState.swift */,
+				A2000000000000000000001D /* ARSessionService.swift */,
+				A2000000000000000000001E /* RealityKitSceneController.swift */,
+				A20000000000000000000023 /* SpatialRaycastResult.swift */,
+				A20000000000000000000024 /* SpatialRaycastService.swift */,
+				A2000000000000000000002F /* RealityKitStrokeRenderer.swift */,
+				A2000000000000000000003F /* SpatialWorldMapCoding.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000013 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000014 /* Drawing */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000014 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000026 /* CanvasPoint3D.swift */,
+				A20000000000000000000027 /* BrushStyle.swift */,
+				A20000000000000000000028 /* StrokePoint.swift */,
+				A20000000000000000000029 /* Stroke.swift */,
+				A2000000000000000000002A /* CanvasTool.swift */,
+				A2000000000000000000002B /* CanvasProject.swift */,
+				A2000000000000000000003E /* SpatialCanvasState.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000015 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000002D /* DrawingEngine.swift */,
+				A20000000000000000000037 /* CanvasHistory.swift */,
+				A2000000000000000000002E /* StrokeRendering.swift */,
+				A20000000000000000000032 /* StrokeRenderProcessor.swift */,
+				A20000000000000000000033 /* StrokeTubeGeometry.swift */,
+				A20000000000000000000049 /* SpatialStrokeHitTester.swift */,
+				A2000000000000000000004B /* StrokeTransformer.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000016 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000039 /* CanvasProjectRepository.swift */,
+				A2000000000000000000003A /* FileCanvasProjectRepository.swift */,
+				A2000000000000000000003B /* CanvasProjectSaveCoordinator.swift */,
+				A2000000000000000000004D /* AirCanvasDocumentTransfer.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000017 /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000040 /* HandPoseModels.swift */,
+				A20000000000000000000041 /* HandPoseDetector.swift */,
+				A20000000000000000000042 /* HandTrackingCoordinator.swift */,
+				A20000000000000000000044 /* FingertipTracking.swift */,
+				A20000000000000000000046 /* PinchGestureClassifier.swift */,
+				A20000000000000000000048 /* SpatialFingertipTracker.swift */,
+			);
+			path = Vision;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000000000000000000001 /* AirCanvas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60000000000000000000002 /* Build configuration list for PBXNativeTarget "AirCanvas" */;
+			buildPhases = (
+				A70000000000000000000001 /* Sources */,
+				A30000000000000000000001 /* Frameworks */,
+				A80000000000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirCanvas;
+			productName = AirCanvas;
+			productReference = A2000000000000000000000E /* AirCanvas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A50000000000000000000002 /* AirCanvasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60000000000000000000003 /* Build configuration list for PBXNativeTarget "AirCanvasTests" */;
+			buildPhases = (
+				A70000000000000000000002 /* Sources */,
+				A30000000000000000000002 /* Frameworks */,
+				A80000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A90000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = AirCanvasTests;
+			productName = AirCanvasTests;
+			productReference = A2000000000000000000000F /* AirCanvasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A50000000000000000000003 /* AirCanvasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A60000000000000000000004 /* Build configuration list for PBXNativeTarget "AirCanvasUITests" */;
+			buildPhases = (
+				A70000000000000000000003 /* Sources */,
+				A30000000000000000000003 /* Frameworks */,
+				A80000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A90000000000000000000002 /* PBXTargetDependency */,
+			);
+			name = AirCanvasUITests;
+			productName = AirCanvasUITests;
+			productReference = A20000000000000000000010 /* AirCanvasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					A50000000000000000000001 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					A50000000000000000000002 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = A50000000000000000000001;
+					};
+					A50000000000000000000003 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = A50000000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = A60000000000000000000001 /* Build configuration list for PBXProject "AirCanvas" */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A40000000000000000000001;
+			productRefGroup = A4000000000000000000000C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50000000000000000000001 /* AirCanvas */,
+				A50000000000000000000002 /* AirCanvasTests */,
+				A50000000000000000000003 /* AirCanvasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A80000000000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EBFC6A7304890EA0074DB8F /* Assets.xcassets in Resources */,
+				A1000000000000000000004F /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A70000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* AirCanvasApp.swift in Sources */,
+				A10000000000000000000002 /* RootView.swift in Sources */,
+				A10000000000000000000003 /* AppState.swift in Sources */,
+				A10000000000000000000004 /* AppRoute.swift in Sources */,
+				A10000000000000000000005 /* AppError.swift in Sources */,
+				A10000000000000000000050 /* UserFacingErrorMessage.swift in Sources */,
+				A10000000000000000000006 /* AppLogger.swift in Sources */,
+				A10000000000000000000007 /* HomeView.swift in Sources */,
+				A10000000000000000000009 /* MyCanvasesView.swift in Sources */,
+				A1000000000000000000000A /* SettingsView.swift in Sources */,
+				A1000000000000000000000D /* OnboardingState.swift in Sources */,
+				A1000000000000000000000E /* OnboardingPage.swift in Sources */,
+				A1000000000000000000000F /* OnboardingView.swift in Sources */,
+				A10000000000000000000011 /* CameraAuthorization.swift in Sources */,
+				A10000000000000000000012 /* CameraPermissionService.swift in Sources */,
+				A10000000000000000000013 /* SpatialCanvasCapabilityService.swift in Sources */,
+				A10000000000000000000014 /* SpatialCanvasAccessViewModel.swift in Sources */,
+				A10000000000000000000015 /* SpatialCanvasAccessView.swift in Sources */,
+				A10000000000000000000017 /* ARTrackingState.swift in Sources */,
+				A10000000000000000000018 /* ARSessionState.swift in Sources */,
+				A10000000000000000000019 /* ARSessionService.swift in Sources */,
+				A1000000000000000000001A /* RealityKitSceneController.swift in Sources */,
+				A1000000000000000000001B /* CanvasARViewModel.swift in Sources */,
+				A1000000000000000000001C /* LiveARCanvasView.swift in Sources */,
+				A1000000000000000000001F /* SpatialRaycastResult.swift in Sources */,
+				A10000000000000000000020 /* SpatialRaycastService.swift in Sources */,
+				A10000000000000000000022 /* CanvasPoint3D.swift in Sources */,
+				A10000000000000000000023 /* BrushStyle.swift in Sources */,
+				A10000000000000000000024 /* StrokePoint.swift in Sources */,
+				A10000000000000000000025 /* Stroke.swift in Sources */,
+				A10000000000000000000026 /* CanvasTool.swift in Sources */,
+				A10000000000000000000027 /* CanvasProject.swift in Sources */,
+				A10000000000000000000029 /* DrawingEngine.swift in Sources */,
+				A10000000000000000000033 /* CanvasHistory.swift in Sources */,
+				A1000000000000000000002A /* StrokeRendering.swift in Sources */,
+				A1000000000000000000002B /* RealityKitStrokeRenderer.swift in Sources */,
+				A1000000000000000000002C /* CanvasTouchInputAdapter.swift in Sources */,
+				A1000000000000000000002E /* StrokeRenderProcessor.swift in Sources */,
+				A1000000000000000000002F /* StrokeTubeGeometry.swift in Sources */,
+				A10000000000000000000031 /* CanvasBrushConfiguration.swift in Sources */,
+				A10000000000000000000032 /* CanvasBrushControlsView.swift in Sources */,
+				A10000000000000000000035 /* CanvasProjectRepository.swift in Sources */,
+				A1000000000000000000003A /* SpatialCanvasState.swift in Sources */,
+				A1000000000000000000003B /* SpatialWorldMapCoding.swift in Sources */,
+				A1000000000000000000003C /* HandPoseModels.swift in Sources */,
+				A1000000000000000000003D /* HandPoseDetector.swift in Sources */,
+				A1000000000000000000003E /* HandTrackingCoordinator.swift in Sources */,
+				A10000000000000000000040 /* FingertipTracking.swift in Sources */,
+				A10000000000000000000042 /* PinchGestureClassifier.swift in Sources */,
+				A10000000000000000000044 /* SpatialFingertipTracker.swift in Sources */,
+				A10000000000000000000045 /* SpatialStrokeHitTester.swift in Sources */,
+				A10000000000000000000047 /* StrokeTransformer.swift in Sources */,
+				A10000000000000000000036 /* FileCanvasProjectRepository.swift in Sources */,
+				A10000000000000000000037 /* CanvasProjectSaveCoordinator.swift in Sources */,
+				A10000000000000000000038 /* MyCanvasesViewModel.swift in Sources */,
+				A1000000000000000000004D /* AirCanvasDocumentTransfer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000000B /* AppStateTests.swift in Sources */,
+				A10000000000000000000010 /* OnboardingStateTests.swift in Sources */,
+				A10000000000000000000016 /* SpatialCanvasAccessViewModelTests.swift in Sources */,
+				A1000000000000000000001D /* ARSessionStateTests.swift in Sources */,
+				A1000000000000000000001E /* CanvasARViewModelTests.swift in Sources */,
+				A10000000000000000000021 /* SpatialRaycastResultTests.swift in Sources */,
+				A10000000000000000000028 /* DrawingDomainModelTests.swift in Sources */,
+				A1000000000000000000002D /* DrawingEngineTests.swift in Sources */,
+				A10000000000000000000034 /* CanvasHistoryTests.swift in Sources */,
+				A10000000000000000000030 /* StrokeRenderProcessorTests.swift in Sources */,
+				A10000000000000000000039 /* CanvasProjectRepositoryTests.swift in Sources */,
+				A1000000000000000000003F /* HandTrackingTests.swift in Sources */,
+				A10000000000000000000041 /* FingertipTrackingTests.swift in Sources */,
+				A10000000000000000000043 /* PinchGestureClassifierTests.swift in Sources */,
+				A10000000000000000000046 /* SpatialStrokeHitTesterTests.swift in Sources */,
+				A10000000000000000000048 /* StrokeTransformerTests.swift in Sources */,
+				A1000000000000000000004E /* AirCanvasDocumentTransferTests.swift in Sources */,
+				A10000000000000000000051 /* UserFacingErrorMessageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70000000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000000C /* AirCanvasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A90000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A50000000000000000000001 /* AirCanvas */;
+			targetProxy = AA00000000000000000000001 /* PBXContainerItemProxy */;
+		};
+		A90000000000000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A50000000000000000000001 /* AirCanvas */;
+			targetProxy = AA00000000000000000000002 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AB00000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		AB00000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		AB00000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9UC82C3P9G;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AirCanvas/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anoushkawayangankar.AirCanvas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AB00000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9UC82C3P9G;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AirCanvas/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anoushkawayangankar.AirCanvas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AB00000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aircanvas.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirCanvas.app/AirCanvas";
+			};
+			name = Debug;
+		};
+		AB00000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aircanvas.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirCanvas.app/AirCanvas";
+			};
+			name = Release;
+		};
+		AB00000000000000000000007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aircanvas.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
+				TEST_TARGET_NAME = AirCanvas;
+			};
+			name = Debug;
+		};
+		AB00000000000000000000008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aircanvas.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
+				TEST_TARGET_NAME = AirCanvas;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A60000000000000000000001 /* Build configuration list for PBXProject "AirCanvas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB00000000000000000000001 /* Debug */,
+				AB00000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60000000000000000000002 /* Build configuration list for PBXNativeTarget "AirCanvas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB00000000000000000000003 /* Debug */,
+				AB00000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60000000000000000000003 /* Build configuration list for PBXNativeTarget "AirCanvasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB00000000000000000000005 /* Debug */,
+				AB00000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A60000000000000000000004 /* Build configuration list for PBXNativeTarget "AirCanvasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB00000000000000000000007 /* Debug */,
+				AB00000000000000000000008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000001 /* Project object */;
+}

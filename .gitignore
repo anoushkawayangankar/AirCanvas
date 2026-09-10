@@ -1,0 +1,45 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+.build/
+.build*/
+*.xcuserstate
+xcuserdata/
+*.xcuserdatad/
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Code coverage
+*.profdata
+*.profraw
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Signing / certificates / provisioning
+*.mobileprovision
+*.cer
+*.p12
+*.p8
+
+# Xcode archives / exported apps
+*.xcarchive
+*.ipa
+
+# Logs
+*.log
